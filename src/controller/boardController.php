@@ -2,7 +2,9 @@
 
     namespace src\controller;
 
-    class boardController{
+    class boardController
+    {
+        
         public function helloWorld(){
             echo 'helloworld php ';
         }
