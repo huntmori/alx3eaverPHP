@@ -1,7 +1,5 @@
-<?php
+<?php namespace MyApp;
     
-    namespace MyApp
-    {
         use Ratchet\MessageComponentInterface;
         use Ratchet\ConnectionInterface;
         class Socket implements MessageComponentInterface 
@@ -36,5 +34,4 @@
             /** @origin:MessageComponentInterface->onError */
             public function onError(ConnectionInterface $conn, \Exception $e){}
         }
-    }
 ?>

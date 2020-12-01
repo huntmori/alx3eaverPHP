@@ -1,6 +1,7 @@
 <?php
-    require dirname(__FILE__)."/vendor/autoload.php";
-    require dirname(__FILE__)."/src/Socket.php";
+    require "./src/Socket.php";
+    require "./vendor/autoload.php";
+    
     use Ratchet\Server\IoServer;
     use Ratchet\Http\HttpServer;
     use Ratchet\WebSocket\WsServer;
