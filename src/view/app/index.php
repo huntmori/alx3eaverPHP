@@ -6,6 +6,7 @@
     use common\Constants;
 ?>
 <div class="container-fluid">
+    hello
     <div class="row">
         <div class="<?=Constants::ASIDE_BOOTSTRAP_CLASS;?>" style="background-color:magenta; height:100vh;">
             Aside
