@@ -9,38 +9,38 @@
         class PageInfo
         {
             //current page
-            public $page;
+            public  int $page;
 
             // current pagesize
-            public $page_size;
+            public  int $page_size;
 
             //  using for LIMIT statement of sql
-            public $begin;
+            public  ?int $begin;
 
             // mean total count of WHERE state filtered data rows
-            public $total_count;
+            public  ?int $total_count;
 
             // mean maximum page of YOUR SQL RESULT
-            public $total_page;
+            public ?int $total_page;
 
             // page_group Properties
             //  for($i=$pageInfo->start_page; $i<=$pageInfo->end_page; $i++ ){ ... }
             // start page of PageGroup
-            public $start_page;
+            public ?int $start_page;
             // end page of PageGroup
-            public $end_page;
+            public ?int $end_page;
 
             // mean total visible data row counts
-            public $nonConditionTotalCount;
+            public ?int $nonConditionTotalCount;
             
-            public $page_group_size;
-            public $next_page_group_index;
-            public $prev_page_group_index;
+            public ?int $page_group_size;
+            public ?int $next_page_group_index;
+            public ?int $prev_page_group_index;
 
             /**
              * @usage: $objPageInfo = new PageInfo($_GET);
              */
-            public function __construct($data)
+            public function __construct(array $data)
             {
                 $this->page = isset($data['page']) == false? 1 :$data['page'];
                 $this->page_size = isset($data['page_size']) == false ? 10 : $data['page_size'];
@@ -59,7 +59,7 @@
              *                      AND     ...
              *                      LIMIT   {$objPageInfo->begin},{$objPageInfo->limit}
              */
-            public function setTotalCount($total_count)
+            public function setTotalCount(int $total_count):void
             {
                 $this->total_count = $total_count;
                 $this->total_page = ceil($this->total_count / $this->page_size);

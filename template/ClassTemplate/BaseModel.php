@@ -1,6 +1,6 @@
 <?php
-    namespace template\clazz
-    {
+    namespace template\ClassTemplate;
+    
         use stdClass;
         class BaseModel
         {
@@ -13,5 +13,5 @@
                 return $data_set;
             }
         }
-    }    
+    
 ?>

@@ -1,4 +1,4 @@
-<?php namespace common\clazz;
+<?php namespace common;
 
     class Config
     {

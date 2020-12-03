@@ -1,6 +1,6 @@
 <?php
-    require "./src/Socket.php";
-    require "./vendor/autoload.php";
+    require "src/Socket.php";
+    require "vendor/autoload.php";
     
     use Ratchet\Server\IoServer;
     use Ratchet\Http\HttpServer;

@@ -1,5 +1,7 @@
-<?php namespace MyApp;
-    
+<?php namespace src;
+        $namespace_to_path = str_replace("\\", DIRECTORY_SEPERATOR, __NAMESPACE__);
+        $doc_root = str_replace($namespace_to_path, "", __DIR__);
+        require_once $doc_root."audtoload.php";
         use Ratchet\MessageComponentInterface;
         use Ratchet\ConnectionInterface;
         class Socket implements MessageComponentInterface 
