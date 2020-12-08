@@ -6,10 +6,10 @@
     use common\Constants;
 ?>
 <div class="container-fluid">
-    hello
+    hello test
     <div class="row">
         <div class="<?=Constants::ASIDE_BOOTSTRAP_CLASS;?>" style="background-color:magenta; height:100vh;">
-            Aside
+            Asideaa
         </div>
         <div class="col-10" style="background-color:cyan; height:100vh;">
             <div class="row" style="background-color:yello; height:10vh;">
