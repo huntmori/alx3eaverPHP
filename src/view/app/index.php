@@ -9,7 +9,7 @@
     hello test
     <div class="row">
         <div class="<?=Constants::ASIDE_BOOTSTRAP_CLASS;?>" style="background-color:magenta; height:100vh;">
-            Asideaa
+            Asideaadd
         </div>
         <div class="col-10" style="background-color:cyan; height:100vh;">
             <div class="row" style="background-color:yello; height:10vh;">
